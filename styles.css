@@ -1,0 +1,286 @@
+* {
+  font-family: sans-serif;
+  font-size: 16px;
+  box-sizing: border-box
+}
+
+header {
+  background: #2B2B2B;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-link {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.links-and-logo {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  color: white;
+  padding: 0;
+}
+
+main {
+  background: #EFEFEF;
+}
+
+main h2 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 3% 3% 3%;
+}
+
+.profile-area {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 20px;
+}
+
+.card {
+  height: 500px;
+  width: 100%;
+  box-shadow: 5px 5px 5px #2B2B2B;
+  border: 2px solid black;
+  color: #737373;
+  background: white;
+  background-repeat: no-repeat;
+}
+
+.hero-image {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  height: 150px;
+  background-attachment: fixed;
+}
+
+.card1 .hero-image {
+  background: 
+  linear-gradient( 
+    rgba(43, 43, 43, 0.45), 
+    rgba(43, 43, 43, 0.45)), 
+    url(images/dumbledore.jpg);
+  background-size: 140%;
+  background-position: right 50% bottom 90%;
+}
+
+.card1 .hero-image:hover {
+  background: url(images/dumbledore.jpg);
+  background-size: 140%;
+  background-position: right 50% bottom 90%;
+}
+
+.card2 .hero-image {
+  background: 
+  linear-gradient( 
+    rgba(43, 43, 43, 0.45), 
+    rgba(43, 43, 43, 0.45)), 
+    url(images/Gandalf.jpg);
+  background-size: cover;
+  background-position: right 90% bottom 75%;
+}
+
+.card2 .hero-image:hover {
+  background: url(images/Gandalf.jpg);
+  background-size: cover;
+  background-position: right 60% bottom 75%;
+}
+
+.card3 .hero-image {
+  background: 
+    linear-gradient( 
+      rgba(43, 43, 43, 0.45), 
+      rgba(43, 43, 43, 0.45)), 
+      url(images/Jacebeleren.jpg);
+  background-size: cover;
+  background-position: right 60% bottom 100%;
+}
+
+.card3 .hero-image:hover {
+  background: url(images/Jacebeleren.jpg);
+  background-size: cover;
+  background-position: right 60% bottom 95%;
+}
+
+.card5 .hero-image {
+  background: 
+    linear-gradient( 
+      rgba(43, 43, 43, 0.45), 
+      rgba(43, 43, 43, 0.45)), 
+      url(images/Timtheenchanter.jpg);
+  background-size: cover;
+  background-position: right 60% bottom 100%;
+  background-repeat: no-repeat;
+}
+
+.card5 .hero-image:hover {
+  background: url(images/Timtheenchanter.jpg);
+  background-size: 150%;
+  background-position: right 60% bottom 100%;
+  background-repeat: no-repeat;
+}
+
+.card4 .hero-image {
+  background: linear-gradient( 
+    rgba(43, 43, 43, 0.45), 
+    rgba(43, 43, 43, 0.45)), 
+    url(images/harry-dresden.jpg);
+  background-size: 100%;
+  background-position: right 0% bottom 90%;
+}
+
+.card4 .hero-image:hover {
+  background: url(images/harry-dresden.jpg);
+  background-size: 100%;
+  background-position: right 0% bottom 90%;
+}
+
+.card6 .hero-image {
+  background: linear-gradient( rgba(43, 43, 43, 0.45), rgba(43, 43, 43, 0.45)), url(images/doctor-strange.jpg);
+  background-size: 100%;
+  background-position: right 0% bottom 90%;
+}
+
+.card6 .hero-image:hover {
+  background: url(images/doctor-strange.jpg);
+  background-size: 100%;
+  background-position: right 0% bottom 90%;
+}
+
+.card7 .hero-image {
+  background: linear-gradient( rgba(43, 43, 43, 0.45), rgba(43, 43, 43, 0.45)), url(images/john-constantine.jpg);
+  background-size: 100%;
+  background-position: right 0% bottom 90%;
+}
+
+.card7 .hero-image:hover {
+  background: url(images/john-constantine.jpg);
+  background-size: 100%;
+  background-position: right 0% bottom 90%;
+}
+
+.card8 .hero-image {
+  background: linear-gradient( rgba(43, 43, 43, 0.45), rgba(43, 43, 43, 0.45)), url(images/lo-pan.jpg);
+  background-size: 100%;
+  background-position: right 0% bottom 60%;
+}
+
+.card8 .hero-image:hover {
+  background: url(images/lo-pan.jpg);
+  background-size: 100%;
+  background-position: right 0% bottom 60%;
+}
+
+.flip-button {
+  background: white;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  border: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.flip-button:hover {
+  transform: scale(1.1);
+}
+
+.flip-button img {
+  color: white;
+  width: 100%;
+}
+
+.likes {
+  color: white;
+  flex-direction: column;
+  margin: 0;
+}
+
+.likes h4,
+.likes h2 {
+  margin: 0;
+}
+
+.likes h4 {
+  font-size: 0.8rem;
+  font-weight: normal;
+  padding-left: 12%;
+}
+
+.likes h2 {
+  font-weight: normal;
+  font-size: 2.5rem;
+}
+
+.info-area {
+  margin-left: 5%;
+}
+
+.name,
+.since {
+  margin: 0;
+}
+
+.name {
+  margin-top: 7%;
+}
+
+.since {
+  font-weight: normal;
+  font-size: 0.9rem
+}
+
+.wiki-link {
+  background: #efefef;
+  width: 90%;
+  height: 100px;
+  overflow-wrap: break-word;
+  word-break: break-all;
+  display: flex;
+  align-items: center;
+  padding: 5%;
+  margin: 8% 0;
+}
+
+.wiki-link a {
+  color: #a2a2a2;
+}
+
+.hometown-headers {
+  margin-bottom: 3%;
+}
+
+.hometown,
+.town {
+  margin: 0;
+}
+
+.hometown {
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+
+.friends {
+  margin: 8% 0;
+}
+
+.friends h4 {
+  margin: 0;
+}
+
+.friend-count {
+  color: #52c2fe;
+  padding: 0;
+  font-weight: normal;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "static-comp2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mike-duke/md-comp-challenge-2-1808.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mike-duke/md-comp-challenge-2-1808/issues"
+  },
+  "homepage": "https://github.com/mike-duke/md-comp-challenge-2-1808#readme"
+}
