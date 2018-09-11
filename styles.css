@@ -28,11 +28,17 @@ header {
   width: 15%;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .user-login span {
   font-size: 0.7rem;
   margin: 5%;
+  color: #51a7ec
+}
+
+.user-login span:hover {
+  color: white;
 }
 
 .user-icon {
@@ -40,6 +46,14 @@ header {
   width: 30px;
   padding: 5px;
   border: 2px solid white;
+  border-radius: 50%;
+}
+
+.user-icon:hover {
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  border: 2px solid #51a7ec;
   border-radius: 50%;
 }
 
@@ -51,6 +65,14 @@ header {
 .links-and-logo {
   display: flex;
   justify-content: space-between;
+  margin: 2% 0 3% 0;
+}
+
+.menu-icon {
+  display: hidden;
+  height: 30px;
+  width: 30px;
+  background: url(images/menu-button.svg);
 }
 
 ul {
@@ -58,9 +80,10 @@ ul {
   align-items: flex-end;
   width: 50%;
   color: white;
-  padding: 0 0 2% 0;
+  padding: 0 0 0% 0;
   list-style: none;
   margin: 0 0 1% 2%;
+  justify-content: flex-start;
 }
 
 .nav-icon {
@@ -88,10 +111,12 @@ li:hover {
   width: 30%;
 }
 
-.logo {
+.logo a{
   font-size: 2.5rem;
   font-family: Caeldera;
   margin: 2% 0 2% 0;
+  color: white;
+  text-decoration: none;
 }
 
 .logo-img {
@@ -343,4 +368,43 @@ main {
   font-weight: normal;
   font-size: 2.5rem;
   margin: 0;
+}
+
+@media only screen and (max-width: 850px) {
+  .link {
+    flex-direction: column;
+    margin: 0;
+    align-items: flex-start;
+    margin: 0 0 0 2.5%;
+  }
+
+  .spells {
+    margin: 0;
+  }
+
+  .profile-title {
+    padding: 3% 2% 2%;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .card {
+    height: 570px;
+  }
+}
+
+@media only screen and (max-width: 535px) {
+  ul {
+    width: 0;
+  }
+
+  .nav-icon {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .logo a {
+    display: none;
+  }
 }
